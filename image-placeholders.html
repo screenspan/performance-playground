@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <link rel="preload" as="image" href="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=40"> -->
+  <style>
+    
+    body {
+      margin: 0;
+      text-align: center;
+    }
+    
+    h1, h2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+      margin-top: 1.5em;
+      font-style: italic;
+    }
+
+    @keyframes focus-in {
+      0% {
+        filter: blur(50px);
+        transform: scale(.8);
+      }
+      50% {
+        filter: blur(40px);
+      }
+      100% {
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+
+    img {
+      animation: focus-in 2s forwards ease;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <h1 id="headline_a">Example A</h1>
+  <h2>Inline Placeholder in Image Element</h2>
+  <img width="250" height="250" id="image_a"
+    style="background-position:center; background-repeat:no-repeat; background-size:100%; background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/8AAEQgAKAAoAwERAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/bAEMBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/dAAQABf/aAAwDAQACEQMRAD8A/v4oAKACgAoAKAP/0P799y7gu4biCwXI3EDgkDqQCQCcY57UX6dd7em/3XX3+YC0AFABQAUAf//R/uC+M3hDxTrMWk+JvBGqtovjLwjLcXugaktqt9Hi4iEV/pWpaa81smsaFq0CJBqWmNcW0peO1vbG8s7+zt568XPMklm1LDV8Hi5ZZnOWzqVsrzOFGOJ+r1KkeStQxWGlOksXl+NhFU8ZhHVpSmlSrUa1HE0KNWExaTak2k3dPp5dOi3em9m2j+fL9rT/AILb/Hj9mX4jf8IF8QPBPhn4ZJpttrqS+KB8NvFnxG8K6/qFpZqfD/78eLfCN9ocGtX7Mt3DM895p9rBO9tDqWwO35zl3EviJg86zHCcZYDIMFlmDwlH6hmORUswxVDNsRWqVG6zhiZ+3wcadKmlUw8lKVOdS3tK0VGZ/V/0Y/AfJPGTG8U08/xijDKv7EhluAw/FWW8N4/Fxx2Krf2pjKFTMMnziOL+oYKivZYf2NCFTE1YQqYmmkeIeG/+DmSCfxA/h/V2+ENzawTzwx+LY/hz8ZrPR9Z8tYI7MWOmaZrHiTxJaz6pcTSeXHcaI62MNsBL5890kUX01DjnATqOk5xqSTa5qWGxSi2v5fjbv1uraq3NdH9U5t+z74cwmWvNKObcWU5ctB1MrfEnBGIxGClWlUdX2+OxGAyvKq8cJCFNTlSzCHt6ldKPJCDlL69+Gv8AwVJ/bg/bC1lfDH7J37M+rS2EwitZ/i14o8D6v8PvhPos0hUT6pN4y+JN/eatq9rbRkzQ6Vo3wyvdWu/lheK1JaSL1KGdY3MpKOW5diXB3visVRlhMPCzSv8A7Q41ZvraFCfay3l+I8WeBPgH4U0I4njvxKWZY1qdWPC+R5xgc/4irRSvTwlTLeHsNRwWX1qsrQnisZxXTwtH3px9slGM/wBrv2dfhn8YPh34a1B/jb8ctc+NnjbxDcw6hfXFxoHh/wAM+FPCzASs+i+DdJ0jTre/XS43nMZu9d1DUb+8S3t5ClkRJC/0FGlUpQtVrSr1HZyk0lFPqoJJNR9W+m2p/JnG/EfDfEOPw74V4Jy/grKMDSlh6GHw+PzPNMzzFe4ljM5x2PxNSjUxclT5vZ4HC4TD0pVKqUaicJQ//9L+/ZlVhhhkU02tv6/P77feJpPf+vy+6/3Hz78WP2XPgh8bFYfEfwFoXiN3Uo8t5ZxmZ0/uvKiq7r/sk44zwQNynGnUVqlNSXyfys1/l6vQ68FmGYZbVjXy/GYjCVoO8KuHrVKFWD7xnSkpL05vmzzT4df8E+P2PPhZqZ1vwd8Afhrp+tFt/wDa8nhfTLvUA+8OXW5uoJZFcuA5dSGLAMSCBuxp4TBUnz08LShP+aNOEZfetevfttY9zMeN+Nc3w0cFmnFnEWPwcVZYXF5zmOIwyW1lQq4mdJK2luS3dPQ+vtO0nTdJt47TTbK1sbWEBYre0t47aCNR91UiiVUUAcAAY+mcV0c3ZWv9/wDXnf7z5fkV227tu70td937zu/kvwsaNSUf/9P+/igAoAKACgAoA//Z)"
+    src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=880&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=880&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=880&image_a">
+
+  <h1 id="first_headline">Example B</h1>
+  <h2>Inline Placeholder in Picture Element</h2>
+  <picture>
+    <source
+      srcset="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?crop=entropy&cs=tinysrgb&fit=crop&fm=webp&h=880&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=880&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=880"
+      type="image/webp">
+    <img width="250" height="250" id="image_b"
+      style="background-position:center; background-repeat:no-repeat; background-size:100%; background-image:url(data:image/jpeg;base64,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)"
+      src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=880&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=880&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=880">
+  </picture>
+
+  <h1 id="headline_b">Example C</h1>
+  <h2>URL Placeholder in Image Element</h2>
+  <img width="250" height="250" id="image_c"
+    style="background-position:center; background-repeat:no-repeat; background-size:100%; background-image:url(https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=40)"
+    src="https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=880&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=880&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=880&image_c">
+
+  <!-- Log LCP candidates to console -->
+  <script>
+    new PerformanceObserver((entryList) => {
+      for (const entry of entryList.getEntries()) {
+        console.log('LCP candidate:', entry.startTime, entry);
+      }
+    }).observe({ type: 'largest-contentful-paint', buffered: true });
+  </script>
+</body>
+
+</html>
